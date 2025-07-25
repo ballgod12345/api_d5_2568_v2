@@ -20,7 +20,7 @@ app.delete('/delete-user/:id',async (req, res) => {
      })
 })
 app.put('/edit-user/:id',async (req, res) => {
-
+      console.log('data11=',req.params)
      console.log('data=',req.params)
      const {id} = req.params
      const {email,password} = req.body
